@@ -1,0 +1,64 @@
+get_data:
+    download_id: "1D-0gn9kJObWDnHXy9_NwI1Us8zCfFlwt"
+    data: "../data/bank.csv"
+    
+
+data_analysis:
+    data: "../data/bank.csv"    
+    
+    dataset_balance:
+        title: "Deposit Distribution of Bank Customers"
+        xlabel: "Deposit"
+        ylabel: "Total Customers"
+            
+    bal_vs_deposit: 
+        title: "Balance vs Deposit of Customers"
+        xlabel: "Balance"
+        ylabel: "Total Customers"
+        
+    age_vs_deposit:
+        title: "Age vs Deposit of Customers"
+        xlabel: "Age"
+        ylabel: "Total Customers"
+        
+    job_vs_deposit:
+        title: "Job vs Deposit of Customers"
+        xlabel: "Job"
+        ylabel: "Total Customers"
+        
+    marital_vs_deposit:
+        title: "Marital vs Deposit of Customers"
+        xlabel: "Marital"
+        ylabel: "Total Customers"
+        
+    education_vs_deposit:
+        title: "Education vs Deposit of Customers"
+        xlabel: "Education"
+        ylabel: "Total Customers"
+
+
+prepare_data:
+    data: "../data/clean_data.csv"
+    
+split_data:
+    data: "../data/prepared_data.csv"
+    
+model_data:
+    train_set: "../data/train_set.csv"
+    train_labels: "../data/train_labels.csv"
+    test_set: "../data/test_set.csv"
+    test_labels: "../data/test_labels.csv"
+
+    feature_importance:
+        xlabel: "Feature Labels"
+        ylabel: "Feature Importances"
+        title: "Comparison of Different Feature Importances"
+        
+    cbc_params: 
+        loss_function: "Logloss"
+        eval_metric: "AUC"
+        cat_features: [1, 2, 3, 7, 8]
+        verbose: 200
+        random_seed: 1
+        iterations: 1000
+        max_depth: 7    
