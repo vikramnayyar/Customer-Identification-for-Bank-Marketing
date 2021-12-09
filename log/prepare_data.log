@@ -1,0 +1,12 @@
+[I 211209 12:28:22 utility:86] Dataset with 11162 and 17 features was loaded successfully.
+[I 211209 12:28:22 prepare_data_util:26] Categorical conversion of columns was completed successfully.
+[I 211209 12:28:22 prepare_data_util:51] Columns with outliers are: ['default', 'balance', 'duration', 'campaign', 'pdays', 'previous']
+[I 211209 12:28:22 prepare_data_util:51] Columns with outliers are: ['default', 'balance', 'campaign', 'pdays', 'previous']
+[I 211209 12:28:23 prepare_data_util:67] From grubbs_test we observe that calculated value is lesser than critical value, Accept null hypothesis and conclude that there is no outlier
+    
+[I 211209 12:28:23 prepare_data_util:67] From grubbs_test we observe that calculated value is lesser than critical value, Accept null hypothesis and conclude that there is no outlier
+    
+[I 211209 12:28:23 prepare_data_util:67] From grubbs_test we observe that calculated value is lesser than critical value, Accept null hypothesis and conclude that there is no outlier
+    
+[I 211209 12:28:23 prepare_data_util:67] From grubbs_test we observe that calculated value is lesser than critical value, Accept null hypothesis and conclude that there is no outlier
+    

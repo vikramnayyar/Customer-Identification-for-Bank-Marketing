@@ -1,0 +1,30 @@
+[I 211209 12:27:56 utility:86] Dataset with 11162 and 17 features was loaded successfully.
+[I 211209 12:27:56 get_data_util:20] 
+     * Size of dataframe: (11162, 17)
+    
+[I 211209 12:27:56 get_data_util:21] * Datatype of columns are:
+[I 211209 12:27:56 get_data_util:22] None
+    
+    
+[I 211209 12:27:56 get_data_util:23] * Column-wise NaNs can be identified as: 
+[I 211209 12:27:56 get_data_util:24] age          0
+    job          0
+    marital      0
+    education    0
+    default      0
+    balance      0
+    housing      0
+    loan         0
+    contact      0
+    day          0
+    month        0
+    duration     0
+    campaign     0
+    pdays        0
+    previous     0
+    poutcome     0
+    deposit      0
+    dtype: int64
+    
+[I 211209 12:27:56 get_data_util:25] Total NaNs:0
+[I 211209 12:27:56 get_data:81] Cleaned dataset was saved successfully.

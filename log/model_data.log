@@ -1,0 +1,15 @@
+[I 211209 12:28:28 utility:86] Dataset with 8929 and 16 features was loaded successfully.
+[I 211209 12:28:28 utility:86] Dataset with 8929 and 1 features was loaded successfully.
+[I 211209 12:28:28 utility:86] Dataset with 2233 and 16 features was loaded successfully.
+[I 211209 12:28:28 utility:86] Dataset with 2233 and 1 features was loaded successfully.
+[I 211209 12:28:42 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.854904
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.853560
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.828034
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.782356
+[I 211209 12:28:56 model_data:46] Accuracy of the best model after optimization is 0.8705776981639051
