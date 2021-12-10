@@ -256,11 +256,3 @@ if predict_button:
 # st.write('\n')
 # about = st.expander('More about app')
 # about.write("The model is designed on dataset related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.")
-
-
-# References:
-#     1. https://www.youtube.com/watch?v=JwSS70SZdyM&ab_channel=freeCodeCamp.org
-#     2. https://towardsdatascience.com/build-your-first-interactive-data-science-web-app-with-streamlit-d4892cbe4792
-#     3. https://www.kaggle.com/amlanmohanty1/build-web-app-for-heart-disease-with-streamlit#Let's-save-our-model-using-pickle
-#     4. https://medium.com/swlh/3-alternatives-to-if-statements-to-make-your-python-code-more-readable-91a9991fb353
-#     5. https://stackoverflow.com/questions/51102205/how-to-know-the-labels-assigned-by-astypecategory-cat-codes
