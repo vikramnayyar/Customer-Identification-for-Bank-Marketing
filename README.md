@@ -1,13 +1,14 @@
 # Customer Identification for Bank Marketing Campaign
 
-## selected_previous is not used in the model. this can be removed from app.py form. Otherwise, form has 16 inputs and model has 15 inputs.  
+## selected_previous is not used in the model. this can be removed from app.py form. Otherwise, form has 16 inputs and model has 15 inputs. But selected_previous is used in adding a new feature, so cannot be removed. TOTAL FEATURES = 16
+
 
 ## Demo
 The application is deployed in Heroku. The app is available in the following link
 https://depositing-customers-in-bank.herokuapp.com/
 
 ## Introduction
-An app is developed for bank marketing campaigns; that target customers interested in making term deposits. App is based on 15 inputs that predict whether a customer will deposit or not? The app was trained using <b>sklearn</b> models and is developed in <b>Streamlit</b>. 
+An app is developed for bank marketing campaigns; that target customers interested in making term deposits. App is based on 16 inputs that predict whether a customer will deposit or not? The app was trained using <b>sklearn</b> models and is developed in <b>Streamlit</b>. 
 
 ## Dataset
 The dataset consists of actual information obtained from a marketing campaign of a Portuguese banking institution. The bank launched this campaign to increase the term deposits. Often; each customer was contacted more than once, to determine as a depositor or non-depositor.
@@ -25,7 +26,7 @@ Therefore, such a project is vital for product marketing.
 ## Goal
 This work was performed as a personal project and is based on the dataset available on kaggle. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
 
-An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. With 15 features, the app should be prefilled with usual values.  
+An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. With 16 features, the app should be prefilled with usual values.  
 
 
 ## System Environment
@@ -53,8 +54,7 @@ An app classifying depositing customers, provides a very straightforward and int
 ## Technical Description
 The main project scripts are in the "src" directory. Exceptionally, "app.py" is in app directory. The main constituting scripts are as follows
 
-* **get_data.py:** This script downloads the data as **"restn_data.csv"** (The data is not present in the repository due to upload size restrictions of Github). NaNs are removed. Cleaned dataset is saved as **"cleaned_data.csv"**. Locations and restaurant type dictionaries are saved as **"locations_dict.pkl"** and 
-***"rest_type_dict.pkl"**. These dictionaries are later used by Streamlit app.
+* **get_data.py:** The script reads the data from **bank.csv** file located in data directory. The dataset is analyzed and cleaned dataset is saved as **"cleaned_data.csv"**. 
 
 * **data_analysis.py:** This script obtains various visualizations of the dataset. These visualizations are present in the **"Visualization"** directory. 
 
@@ -62,15 +62,13 @@ The main project scripts are in the "src" directory. Exceptionally, "app.py" is 
 
 * **split_data.py:** The cleaned dataset is split using stratified sampling. This ensures the fair splitting. Train data and test data are respectively saved as **"train_set.csv"** and **"test_set.csv"**. Labels are separated from train and test sets and saved as **"train_labels.csv"** and **"test_labels.csv"**.
 
-* **model_data.py:** The train set is modelled using ____________ data science models. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to_________. This model is saved as **"model.pkl"**. 
+* **model_data.py:** The train set is modelled using data science models. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to **87.1 %**. This model is saved as **"model.pkl"**. 
 
-* **app.py:** The script develops a Streamlit app; that accepts ________ user inputs to predict the restaurant rating. 
+* **app.py:** The script develops a Streamlit app; that accepts 16 user inputs to predict the restaurant rating. 
  
 * **run_project.py:** The script runs all the project scripts sequentially (including applcation). Therefore, entire project is executed with this script.  
 
 **get_data_util.py**, **data_analysis_util.py**, **prepare_data_util.py**, **split_data_util.py**, **model_data_util.py** and **utility.py** declare vital functions that are required by respective scripts. 
-
-Final accuracy of <b>87.7%</b> was achieved. Among 85 kaggle notebooks, this was the highest achieved accuracy (Kaggle Notebook Link: https://www.kaggle.com/janiobachmann/bank-marketing-dataset/code).  
 
 ## Directory Structure
 
@@ -141,8 +139,8 @@ Running the following command in the "src" directory executes the entire project
 ```bash
 python3 run_project.py
 ```
-Alternatively, any main project scripts can be individually executed using the general script given as
+Alternatively, any project script can be individually executed using the general script given as
 ```bash
 python3 script.py
 ```
-Here “script.py” is any python script. 
+Here “script.py” represents any python script. 
