@@ -115,7 +115,10 @@ Final accuracy of <b>87.7%</b> was achieved. Among 85 kaggle notebooks, this was
 ├── LICENSE                          # License
 ├── README.md                        # About repository
 
-## Installing DependenciesForemost running the project, installing the dependencies is essential. 
+```
+
+## Installing Dependencies
+Foremost running the project, installing the dependencies is essential. 
 * Ensure Python 3.8.8 or later is installed in the system. 
 * All required libraries are listed in "requirements.txt". These are easily installed; by running the following command in project directory
 ```bash
