@@ -1,5 +1,7 @@
 # Customer Identification for Bank Marketing Campaign
 
+## selected_previous is not used in the model. this can be removed from app.py form. Otherwise, form has 16 inputs and model has 15 inputs.  
+
 ## Demo
 The application is deployed in Heroku. The app is available in the following link
 https://depositing-customers-in-bank.herokuapp.com/
