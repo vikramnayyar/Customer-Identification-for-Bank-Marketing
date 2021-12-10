@@ -62,7 +62,7 @@ The main project scripts are in the "src" directory. Exceptionally, "app.py" is 
 
 * **split_data.py:** The cleaned dataset is split using stratified sampling. This ensures the fair splitting. Train data and test data are respectively saved as **"train_set.csv"** and **"test_set.csv"**. Labels are separated from train and test sets and saved as **"train_labels.csv"** and **"test_labels.csv"**.
 
-* **model_data.py:** The train set is modelled using data science models. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to_________. This model is saved as **"model.pkl"**. 
+* **model_data.py:** The train set is modelled using ____________ data science models. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to_________. This model is saved as **"model.pkl"**. 
 
 * **app.py:** The script develops a Streamlit app; that accepts ________ user inputs to predict the restaurant rating. 
  
