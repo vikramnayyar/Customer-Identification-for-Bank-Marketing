@@ -105,17 +105,24 @@ Final accuracy of <b>87.7%</b> was achieved. Among 85 kaggle notebooks, this was
 |  ├── split_data.log                # Dataset splitting script  
 |  ├── model_data.log                # Dataset modelling script
 ├── visualizations                   # Dataset visualizations
-|  ├── book_table_vs_rating.png      # Bookings vs ratings figure
-|  ├── cities_vs_rating.png          # Cities vs ratings figure
-|  ├── correlation_heatmap.png       # Feature correlations figure
-|  ├── cuisines_vs_rating.png        # Cuisines vs rating figure 
-|  ├── feature_importances.png       # Best model feature importance figure
-|  ├── online_order_vs_rating.png    # Online oreder vs rating figure
-|  ├── rest_type_vs_rating           # Rest-type vs rating figure 
-|  ├── top_cuisines.png              # Top cuisines figure
+|  ├── age_vs_deposit.png            # Age vs deposit figure
+|  ├── bal_vs_deposit.png            # Balance vs deposit figure
+|  ├── education_vs_deposit.png      # Education vs deposit figure
+|  ├── job_vs_deposit.png            # Job vs deposit figure 
+|  ├── marital_vs_deposit.png        # Marital vs deposit figure
+|  ├── dataset_balance.png           # Dataset balance figure
+|  ├── correlation_heatmap.png       # Correalation heatmap of features
+|  ├── feature_importance.png        # Feature importance of best model
+|  ├── cm_etc.png                    # Confusion matrix of ExtraTreesClassifier
+|  ├── cm_gbc.png                    # Confusion matrix of GradientBoostClassifier
+|  ├── cm_lgbm.png                   # Confusion matrix of LightGBMClassifier
+|  ├── cm_rfc.png                    # Confusion matrix of RandomForestClassifier
+|  ├── cm_xgb.png                    # Confusion matrix of XGBClassifier  
+|  ├── cm_cbc.png                    # Confusion matrix of CatBoostClassifier
+|  ├── cm_optimized_cbc.png          # Confusion matrix of optimized CatBoostClassifier
 ├── requirements.txt                 # Required libraries
 ├── LICENSE                          # License
-├── README.md                        # About repository
+├── README.md                        # Repository description
 
 ```
 
