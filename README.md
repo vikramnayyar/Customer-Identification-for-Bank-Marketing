@@ -10,13 +10,12 @@ An app is developed for bank marketing campaigns; that target customers interest
 ## Dataset
 The dataset consists of actual information obtained from a marketing campaign of a Portuguese banking institution. The bank launched this campaign to increase the term deposits. Often; each customer was contacted more than once, to determine as a depositor or non-depositor.
 
-The dataset was acquired from UCI (University of California, Irvine) repository. It is avalailable in link: https://archive.ics.uci.edu/ml/datasets/bank+marketing). The dataset consists of <b>15</b> features with <b>11162</b> values.    
+The dataset was acquired from UCI (University of California, Irvine) repository. It is avalailable in link: https://archive.ics.uci.edu/ml/datasets/bank+marketing). The dataset consists of <b>11162</b> rows and <b>15</b> features.    
 
 ## Problem Statement
-Marketing a product or a service is very challenging. Identifying the right customer is vital for the marketing team. This can significantly reduce the resources and time. Furthermore, this allows the team to position the product correctly. Unfortunately, finding the right customer can be exhaustive and complicated. There are many features to consider and huge data to analyze. Henceforth, the marketing team relies on experience of the marketing experts and feedback of team. 
+Marketing a product or a service is very challenging. Identifying the right customer is vital for the marketing team. This can significantly reduce the resources and time. Furthermore, this allows the team to position the product correctly. Unfortunately, finding the right customer can be exhaustive and complicated. There are many features to consider and huge data to analyze. Thus conventionally; the marketing team relies on experience of the marketing experts and feedback of team. 
 
-Due to vast facts originating from so many features; a mistake in identification of customer is inevitable. Missing a customer segment results as a loss to the institution. On contrary, identifying wrong segment of customers will result in wastage of resources and time (As faults in strategy is confirmed at a later stage).
-Besides; human error is highly probable and often unnoticeable. 
+Due to vast facts originating from so many features; a mistake in identification of customer is inevitable. Missing a customer segment results as a loss to the institution. On contrary, identifying wrong segment of customers will result in wastage of resources and time (As faults in strategy is confirmed at a later stage). 
 
 Therefore, such a project is vital for product marketing. 
 
@@ -24,7 +23,6 @@ Therefore, such a project is vital for product marketing.
 This work was performed as a personal project and is based on the dataset available on kaggle. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
 
 An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. With 16 features, the app should be prefilled with usual values.  
-
 
 ## System Environment
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
@@ -49,9 +47,9 @@ An app classifying depositing customers, provides a very straightforward and int
 [<img target="_blank" src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png" width=200>](https://streamlit.io/)     [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Heroku_logo.svg/2560px-Heroku_logo.svg.png" width=200>](https://www.heroku.com/)
 
 ## Technical Description
-The main project scripts are in the "src" directory. Exceptionally, "app.py" is in app directory. The main constituting scripts are as follows
+The main project scripts are in the **"src"** directory. Exceptionally, **"app.py"** is in app directory. The main constituting scripts are as follows
 
-* **get_data.py:** The script reads the data from **bank.csv** file located in data directory. The dataset is analyzed and cleaned dataset is saved as **"cleaned_data.csv"**. 
+* **get_data.py:** The script reads the data from **bank.csv** file located in data directory. The dataset is analyzed, cleaned and saved as **"cleaned_data.csv"** in **data** directory. 
 
 * **data_analysis.py:** This script obtains various visualizations of the dataset. These visualizations are present in the **"Visualization"** directory. 
 
