@@ -1,7 +1,7 @@
 # Customer Identification for Bank Marketing Campaign
 
 ## Demo
-The application is deployed in Heroku. The app is available in the following link
+The application is deployed in Heroku. The app is available in the link
 https://depositing-customers-in-bank.herokuapp.com/
 
 ## Introduction
@@ -22,7 +22,7 @@ Therefore, such a project is vital for product marketing.
 ## Goal
 This work was performed as a personal project and is based on the dataset available on kaggle. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
 
-An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. With 16 features, the app should be prefilled with usual values.  
+An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. 
 
 ## System Environment
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
@@ -51,17 +51,17 @@ The main project scripts are in the **"src"** directory. Exceptionally, **"app.p
 
 * **get_data.py:** The script reads the data from **bank.csv** file located in data directory. The dataset is analyzed, cleaned and saved as **"cleaned_data.csv"** in **data** directory. 
 
-* **data_analysis.py:** This script obtains various visualizations of the dataset. These visualizations are present in the **"Visualization"** directory. 
+* **data_analysis.py:** This script obtains various visualizations of the dataset. These visualizations are saved in the **"Visualization"** directory. 
 
 * **prepare_data.py:** The script converts the required features to **categorical** variables. Subsequent outliers are determined using Grubb's Test. These outliers are removed and cleaned dataset is saved as **"prepared_data.csv"**.   
 
-* **split_data.py:** The cleaned dataset is split using stratified sampling. This ensures the fair splitting. Train data and test data are respectively saved as **"train_set.csv"** and **"test_set.csv"**. Labels are separated from train and test sets and saved as **"train_labels.csv"** and **"test_labels.csv"**.
+* **split_data.py:** The cleaned dataset is split using stratified sampling. This ensures the fair splitting. The train and test sets are obtained after dataset splitting. Labels are separated from train and test sets and saved as **"train_labels.csv"** and **"test_labels.csv"**. Train data and test data are respectively saved as **"train_set.csv"** and **"test_set.csv"**.
 
-* **model_data.py:** The train set is modelled using data science models. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to **87.1 %**. This model is saved as **"model.pkl"**. 
+* **model_data.py:** Various data science models are trained on train set. Accuracy of all the models is verified using test set. Henceforth, the best model is selected. The feature selection of the best model is optimized to increase the accuracy to **87.1 %** (approx). This model is saved as **"model.pkl"**. 
 
-* **app.py:** The script develops a Streamlit app; that accepts 16 user inputs to predict the restaurant rating. 
+* **app.py:** The script develops a Streamlit app; that accepts 16 user inputs. These inputs are transformed and fed to **model.pkl**. The model's prediction is displayed in the application. 
  
-* **run_project.py:** The script runs all the project scripts sequentially (including applcation). Therefore, entire project is executed with this script.  
+* **run_project.py:** The script runs all the project scripts (discussed in this section) sequentially. Therefore, entire project is executed with this script.  
 
 **get_data_util.py**, **data_analysis_util.py**, **prepare_data_util.py**, **split_data_util.py**, **model_data_util.py** and **utility.py** declare vital functions that are required by respective scripts. 
 
