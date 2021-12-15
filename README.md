@@ -10,7 +10,7 @@ An app is developed for bank marketing campaigns; that target customers interest
 ## Dataset
 The dataset consists of actual information obtained from a marketing campaign of a Portuguese banking institution. The bank launched this campaign to increase the term deposits. Often; each customer was contacted more than once, to determine as a depositor or non-depositor.
 
-The dataset was acquired from Kaggle and was uploaded by Janio Martinez Bachmann (Datasets Grandmaster). This consists <b>11162</b> rows and <b>15</b> features.    
+The dataset was acquired from UCI (University of California, Irvine) repository. It is avalailable in link: https://archive.ics.uci.edu/ml/datasets/bank+marketing). The dataset consists of <b>15</b> features with <b>11162</b> values.    
 
 ## Problem Statement
 Marketing a product or a service is very challenging. Identifying the right customer is vital for the marketing team. This can significantly reduce the resources and time. Furthermore, this allows the team to position the product correctly. Unfortunately, finding the right customer can be exhaustive and complicated. There are many features to consider and huge data to analyze. Henceforth, the marketing team relies on experience of the marketing experts and feedback of team. 
