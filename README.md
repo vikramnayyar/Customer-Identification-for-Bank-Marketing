@@ -113,6 +113,8 @@ The main project scripts are in the **"src"** directory. Exceptionally, **"app.p
 |  ├── cm_cbc.png                    # Confusion matrix of CatBoostClassifier
 |  ├── cm_optimized_cbc.png          # Confusion matrix of optimized CatBoostClassifier
 ├── requirements.txt                 # Required libraries
+├── Procfile                         # Required for Heroku deployment 
+├── setup.sh                         # Required for Heroku deployment
 ├── LICENSE                          # License
 ├── README.md                        # Repository description
 
@@ -133,7 +135,7 @@ Running the following command in the "src" directory executes the entire project
 ```bash
 python3 run_project.py
 ```
-Alternatively, any project script can be individually executed using the general script given as
+Alternatively, a project script can be individually executed using the general script 
 ```bash
 python3 script.py
 ```
@@ -143,4 +145,4 @@ Exceptionally, application file "app.py" runs using command
 ```bash
 streamlit run app.py
 ```
-**Note:** Please make sure to run the scripts from correct directory locations. 
+**Note:** To run a project script, directory location must be correct.   
