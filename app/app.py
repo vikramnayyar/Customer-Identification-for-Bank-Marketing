@@ -1,20 +1,15 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Wed Sep  8 16:09:06 2021
+The script develops the user application. This application accepts user inputs and 
+feeds them to the model. The resulting model predictions are displayed in the application.    
+"""
 
-@author: Vikram Nayyar
-"""
 import pandas as pd
 import streamlit as st
 import pickle as pkl
 import os
 
-# df = pd.read_csv("../data/bank.csv")
-# df = pd.read_csv("https://github.com/vikramnayyar/Customer-Identification-for-Bank-Marketing/blob/main/data/bank.csv")
-# os.chdir("../data")
+
 df = pd.read_csv("data/bank.csv")
-# os.chdir("../app")
 
 st.title('Deposit Prediction for Bank Marketing Campaign')
 
@@ -234,7 +229,7 @@ dur_pdays = ((selected_duration + selected_previous**0.15 -
 contact_housing = (selected_housing)**(0.2) + (selected_campaign)**(0.35) + selected_contact**(0.2)
 
 
-pickle_in = open("../model/model.pkl","rb")
+pickle_in = open("model/model.pkl","rb")
 classifier = pkl.load(pickle_in)
 
 
@@ -258,6 +253,6 @@ if predict_button:
     else:
         st.success('This customer segment will NOT Deposit')    
 
-# st.write('\n')
-# about = st.expander('More about app')
-# about.write("The model is designed on dataset related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.")
+st.write('\n')
+about = st.expander('More about app')
+about.write("https://github.com/vikramnayyar/Customer-Identification-for-Bank-Marketing/blob/main/README.md")
