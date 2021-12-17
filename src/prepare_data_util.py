@@ -70,20 +70,8 @@ def grubbs_test(x):
         
 
 def scaling_outliers(df, cols_with_outliers):
-#    df_scaled = pd.DataFrame()
     for col in cols_with_outliers:
         if col != 'pdays' and col != 'balance':    # pdays and balance have negative values, so scaling will result in NaNs
             df[col] = (df[col]**(1/3.7))
     return df
         
-#def remaining_outlier_col():
-#    any_outlier_col = []
-#    
-#    for col in cols_with_outliers:
-#        outlier_col = outlier_cols(df[col])
-#        any_outlier_col.append(outlier_col)
-#    
-#    while (any_outlier_col.count(0)): 
-#        any_outlier_col.remove(0)
-#    
-#    return any_outlier_col
