@@ -138,3 +138,9 @@ Alternatively, any project script can be individually executed using the general
 python3 script.py
 ```
 Here “script.py” represents any python script. 
+
+Exceptionally, application file "app.py" runs using command 
+```bash
+streamlit run app.py
+```
+**Note:** Please make sure to run the scripts from correct directory locations. 
