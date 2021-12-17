@@ -1,8 +1,7 @@
 # Customer Identification for Bank Marketing Campaign
 
 ## Demo
-The application is deployed in Heroku. The app is available in the link
-https://depositing-customers-in-bank.herokuapp.com/
+The application is deployed in Heroku. The app is available in the link https://predict-bank-marketing.herokuapp.com/
 
 ## Introduction
 An app is developed for bank marketing campaigns; that target customers interested in making term deposits. App is based on 16 inputs that predict whether a customer will deposit or not? The app was trained using <b>sklearn</b> models and is developed in <b>Streamlit</b>. 
