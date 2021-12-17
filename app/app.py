@@ -13,7 +13,7 @@ import os
 # df = pd.read_csv("../data/bank.csv")
 # df = pd.read_csv("https://github.com/vikramnayyar/Customer-Identification-for-Bank-Marketing/blob/main/data/bank.csv")
 # os.chdir("../data")
-df = pd.read_csv("bank.csv")
+df = pd.read_csv("data/bank.csv")
 # os.chdir("../app")
 
 st.title('Deposit Prediction for Bank Marketing Campaign')
