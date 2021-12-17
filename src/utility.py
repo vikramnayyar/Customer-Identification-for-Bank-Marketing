@@ -23,9 +23,6 @@ def parse_config(config_path):
         config = yaml.safe_load(f)
     return config
 
-# config_path = "../src/config.yaml"   
-# config = parse_config(config_path)   # read config file
-
 ####################################
 #---------Creating Log File---------
 ####################################
@@ -89,7 +86,6 @@ def read_data(data_path):
     except:
         logger.error('Dataset was not loaded. Please ensure that dataset is provided and is named correctly.')
     
-    # return df
 
 ####################################
 #-----------Analyze Data------------
