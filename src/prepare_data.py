@@ -5,8 +5,6 @@ The script converts the columns to categorical features
 
 """
 
-#import pandas as pd
-#from logzero import logger, logfile
 from utility import create_log, parse_config, read_data
 from prepare_data_util import convert_cat, cols_with_ouliers, grubbs_test, scaling_outliers
 
@@ -25,7 +23,6 @@ df_clean = read_data(data_path)
 #----------- Categorical Coversion--------------
 ################################################
 
-# df_clean = df_clean.drop(['cuisines'], axis = 1)   # Dropping non-categorical columns 
 col_list = ['job', 'marital', 'education', 'default', 'housing', 'loan', 'month', 'poutcome', 'deposit', 'contact']
 # col_list = ['online_order', 'book_table', 'location', 'rest_type', 'type', 'city']  # Columns requiring categorical conversion
 df_clean = convert_cat(df_clean, col_list)  # converting to categories
