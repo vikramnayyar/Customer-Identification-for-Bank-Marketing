@@ -8,9 +8,13 @@ Created on Wed Sep  8 16:09:06 2021
 import pandas as pd
 import streamlit as st
 import pickle as pkl
+import os
 
 # df = pd.read_csv("../data/bank.csv")
-df = pd.read_csv("https://github.com/vikramnayyar/Customer-Identification-for-Bank-Marketing/blob/main/data/bank.csv")
+# df = pd.read_csv("https://github.com/vikramnayyar/Customer-Identification-for-Bank-Marketing/blob/main/data/bank.csv")
+os.chdir("../data")
+df = pd.read_csv("bank.csv")
+os.chdir("../app")
 st.title('Deposit Prediction for Bank Marketing Campaign')
 
 st.write("This app is based on 16 inputs that predict wheather a customer will deposit or not? Using this app, a bank can identify specific customer segments; that will make deposits.")
