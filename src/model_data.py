@@ -1,6 +1,6 @@
 """
 
-The script models the split data using several regression models,
+The script models the split data using several classification models,
 then; selects, optimizes and saves the best model 
 
 """
