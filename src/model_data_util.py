@@ -43,6 +43,58 @@ config = parse_config(config_path)   # read config file
 #-----------------Declaring Functions-------------
 ##################################################
 
+
+def custom_cmap():
+    import matplotlib.colors
+    
+    norm = matplotlib.colors.Normalize(-1,1)
+    colors = [[norm(-1.0), "#e9fcdc"], 
+              [norm(-0.6), "#d9f0c9"], 
+              [norm( 0.6), "#4CBB17"],
+              [norm( 1.0), "#0B6623"]]
+    
+    cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", colors)
+    return cmap
+
+
+
+def plot_cm(model, cm, accuracy):
+
+    fig = plt.figure(figsize=(7, 5))
+    plt.title(model, size = 15)
+     
+    # Declaring heatmap labels
+    group_counts = ['{0:0.0f}'.format(value) for value in cm.flatten()]
+    group_percentages = ['{0:.2%}'.format(value) for value in cm.flatten()/np.sum(cm)]
+    
+    labels = [f"{v2}\n{v3}" for v2, v3 in zip(group_counts, group_percentages)]
+    labels = np.asarray(labels).reshape(2,2)
+    
+    # Plotting heatmap 
+    cmap = custom_cmap()
+    sns.heatmap(cm, annot=labels, annot_kws={"size": 15}, fmt = '', cmap=cmap)
+        
+    # Adding figure labels
+    plt.ylabel('Actual Values')
+    plt.xlabel('Predicted Values \n \n Accuracy: {}'.format(round(accuracy, 4)))
+    
+    os.chdir('../visualizations')
+    plt.savefig('cm_{}'.format(model))   # save figure
+    os.chdir('../src')
+
+
+
+def evaluate_model(model, test_data, test_labels, model_label):
+    
+    pred = model.predict(test_data)
+    accuracy = accuracy_score(test_labels, pred)
+    cm = confusion_matrix(test_labels, pred)
+    
+    if accuracy > 0.84:    
+        plot_cm(model_label, cm, accuracy)
+    return accuracy
+
+
 def compare_models(train_data, train_labels, test_data, test_labels):
     
     model_comparison = pd.DataFrame()
@@ -69,58 +121,7 @@ def compare_models(train_data, train_labels, test_data, test_labels):
     model_comparison.sort_values(by = ['Accuracy'], ascending = False, inplace = True ) 
     
     model_comparison.reset_index(drop = True)
-    return model_comparison
-
-
-def evaluate_model(model, test_data, test_labels, model_label):
-    
-    pred = model.predict(test_data)
-    accuracy = accuracy_score(test_labels, pred)
-    cm = confusion_matrix(test_labels, pred)
-    
-    if accuracy > 0.84:    
-        plot_cm(model_label, cm, accuracy)
-    return accuracy
-
-
-def plot_cm(model, cm, accuracy):
-
-    fig = plt.figure(figsize=(7, 5))
-    plt.title(model, size = 15)
-     
-    # Declaring heatmap labels
-    group_counts = ['{0:0.0f}'.format(value) for value in cm.flatten()]
-    group_percentages = ['{0:.2%}'.format(value) for value in cm.flatten()/np.sum(cm)]
-    
-    labels = [f"{v2}\n{v3}" for v2, v3 in zip(group_counts, group_percentages)]
-    labels = np.asarray(labels).reshape(2,2)
-    
-    # Plotting heatmap 
-    cmap = custom_cmap()
-    sns.heatmap(cm, annot=labels, annot_kws={"size": 15}, fmt = '', cmap=cmap)
-    
-    
-    # Adding figure labels
-    plt.ylabel('Actual Values')
-    plt.xlabel('Predicted Values \n \n Accuracy: {}'.format(round(accuracy, 4)))
-    
-    os.chdir('../visualizations')
-    plt.savefig('cm_{}'.format(model))   # save figure
-    os.chdir('../src')
-
-
-def custom_cmap():
-    import matplotlib.colors
-    
-    norm = matplotlib.colors.Normalize(-1,1)
-    colors = [[norm(-1.0), "#e9fcdc"], 
-              [norm(-0.6), "#d9f0c9"], 
-              [norm( 0.6), "#4CBB17"],
-              [norm( 1.0), "#0B6623"]]
-    
-    cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", colors)
-    return cmap
-    
+    return model_comparison    
 
 
 def plot_feature_importance(train_data, train_labels, best_model):
