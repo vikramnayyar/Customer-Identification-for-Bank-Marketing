@@ -140,11 +140,10 @@ Alternatively, a project script can be individually executed using the general s
 python3 script.py
 ```
 Here “script.py” represents any python script. 
-**Note:** To run a project script, directory location must be correct.
 
 Exceptionally, application file "app.py" runs using command 
 ```bash
 streamlit run app/app.py
 ```
-**Note:** To run a project script, directory location must be correct.
+**Note:** To run any project script, directory location must be correct.
    
