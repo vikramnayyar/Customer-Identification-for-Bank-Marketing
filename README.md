@@ -19,7 +19,7 @@ Due to vast facts originating from so many features; a mistake in identification
 Therefore, such a project is vital for product marketing. 
 
 ## Goal
-This work was performed as a personal project and is based on the dataset available on kaggle. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
+This work was performed as a personal project. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
 
 An app classifying depositing customers, provides a very straightforward and intuitive means for identifying customers. This saves substantial <b>resources</b> and <b>time</b>. Also, this apporach is easily reproducible, thus; provides a <b>common</b> marketing platform to all the marketing teams and bank branches. The app will be utilized by the marketing team for accurate customer selection. Reduced errors in identifying customers will <b>increase</b> the bank deposits. 
 
