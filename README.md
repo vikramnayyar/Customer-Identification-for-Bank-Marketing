@@ -12,11 +12,11 @@ The dataset consists of actual information obtained from a marketing campaign of
 The dataset was acquired from UCI (University of California, Irvine) repository. It is avalailable in link: https://archive.ics.uci.edu/ml/datasets/bank+marketing). The dataset consists of <b>11162</b> rows and <b>15</b> features.    
 
 ## Problem Statement
-Numerous factors affect the rise of a property in a region. With the growth of real estate industry; many new regions have emerged. Therefore, there are several opportunities and manifold speculations and verdicts. Identifying a privileged property has become challenging. 
+Marketing a product or a service is very challenging. Identifying the right customer is vital for the marketing team. This can significantly reduce the resources and time. Furthermore, this allows the team to position the product correctly. Unfortunately, finding the right customer can be exhaustive and complicated. There are many features to consider and huge data to analyze. Thus conventionally; the marketing team relies on experience of the marketing experts and feedback of team. 
 
-Conventionally; customers tended to buy neaby properties. But, with globalisation and cultural convergence; customers are more open to newer locations. Presently, customers prefer premium property; that persistently develops. Property price reliably determines the such development. 
+Due to vast facts originating from so many features; a mistake in identification of customer is inevitable. Missing a customer segment results as a loss to the institution. On contrary, identifying wrong segment of customers will result in wastage of resources and time (As faults in strategy is confirmed at a later stage). 
 
-Therefore, such a project is vital for property sales. 
+Therefore, such a project is vital for product marketing. 
 
 ## Goal
 This work was performed as a personal project and is based on the dataset available on kaggle. The motivation was to obtain analysis of bank marketing campaign and identify customers the will make term deposits. For highest possible term deposits, a high accuracy was desirable for customer classification.   
