@@ -79,9 +79,6 @@ The main project scripts are in the **"src"** directory. Exceptionally, **"app.p
 |  ├── test_set.csv                  # Test data
 |  ├── train_label.csv               # Train labels
 |  ├── test_set.csv                  # Test labels
-├── dict                             # Dictionary Files
-|  ├── locations_dict.pkl            # Locations dictionary
-|  ├── rest_type_dict.pkl            # Resaturant type dictionary
 ├── log                              # Log files
 |  ├── get_data.log                  # "get_data.py" script logs
 |  ├── data_analysis.log             # "data_analysis.py" script logs
@@ -91,11 +88,17 @@ The main project scripts are in the **"src"** directory. Exceptionally, **"app.p
 ├── model                            # Model Files
 |  ├── model.pkl                     # Saved model
 ├── src                              # Main project scripts 
-|  ├── get_data.log                  # Dataset acquistion and cleaning script
-|  ├── data_analysis.log             # Dataset analysis and visualization script
-|  ├── prepare_data.log              # Dataset preperation script
-|  ├── split_data.log                # Dataset splitting script  
-|  ├── model_data.log                # Dataset modelling script
+|  ├── get_data.py                   # Dataset acquistion and cleaning script
+|  ├── get_data_util.py              # script declaring utility functions for get_data.py 
+|  ├── data_analysis.py              # Dataset analysis and visualization script
+|  ├── data_anlaysis_util.py         # script declaring utility functions for data_analysis.py 
+|  ├── prepare_data.py               # Dataset preperation script
+|  ├── prepare_data_util.py          # script declaring utility functions for prepare_data.py 
+|  ├── split_data.py                 # Dataset splitting script  
+|  ├── split_data_util.py            # script declaring utility functions for split_data.py 
+|  ├── model_data.py                 # Dataset modelling script
+|  ├── model_data_util.py            # script declaring utility functions for model_data.py 
+|  ├── util.py                       # script declaring general utility functions  
 ├── visualizations                   # Dataset visualizations
 |  ├── age_vs_deposit.png            # Age vs deposit figure
 |  ├── bal_vs_deposit.png            # Balance vs deposit figure
