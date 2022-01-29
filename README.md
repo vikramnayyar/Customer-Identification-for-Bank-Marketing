@@ -98,7 +98,7 @@ The main project scripts are in the **"src"** directory. Exceptionally, **"app.p
 |  ├── split_data_util.py            # script declaring utility functions for split_data.py 
 |  ├── model_data.py                 # Dataset modelling script
 |  ├── model_data_util.py            # script declaring utility functions for model_data.py 
-|  ├── util.py                       # script declaring general utility functions  
+|  ├── utility.py                       # script declaring general utility functions  
 ├── visualizations                   # Dataset visualizations
 |  ├── age_vs_deposit.png            # Age vs deposit figure
 |  ├── bal_vs_deposit.png            # Balance vs deposit figure
