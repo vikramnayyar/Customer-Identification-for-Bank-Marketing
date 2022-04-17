@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  get_data:
+    cmd: python3 src/get_data.py
+    deps:
+    - path: data/bank.csv
+      md5: 8d1cc2ceea5c63e650e4d314250efdd3
+      size: 918960
+    - path: src/get_data.py
+      md5: 1464e0c75a34fe9f84eac649ab32d4c0
+      size: 1064
+    - path: src/get_data_util.py
+      md5: b9f1f1852e9af733add55802d6d88d1f
+      size: 676
+    - path: src/utility.py
+      md5: 678039f5a3a30acafb47323780ed5ba3
+      size: 2948
+    outs:
+    - path: data/clean_data.csv
+      md5: 8d1cc2ceea5c63e650e4d314250efdd3
+      size: 918960

@@ -28,3 +28,93 @@
     
 [I 211209 12:27:56 get_data_util:25] Total NaNs:0
 [I 211209 12:27:56 get_data:81] Cleaned dataset was saved successfully.
+[I 220417 15:53:33 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220417 15:53:33 get_data_util:12] 
+     * Size of dataframe: (11162, 17)
+    
+[I 220417 15:53:33 get_data_util:13] * Datatype of columns are:
+[I 220417 15:53:33 get_data_util:14] None
+    
+    
+[I 220417 15:53:33 get_data_util:15] * Column-wise NaNs can be identified as: 
+[I 220417 15:53:33 get_data_util:16] age          0
+    job          0
+    marital      0
+    education    0
+    default      0
+    balance      0
+    housing      0
+    loan         0
+    contact      0
+    day          0
+    month        0
+    duration     0
+    campaign     0
+    pdays        0
+    previous     0
+    poutcome     0
+    deposit      0
+    dtype: int64
+    
+[I 220417 15:53:33 get_data_util:17] Total NaNs:0
+[I 220417 15:53:33 get_data:36] Cleaned dataset was saved successfully.
+[I 220417 16:21:16 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220417 16:21:16 get_data_util:12] 
+     * Size of dataframe: (11162, 17)
+    
+[I 220417 16:21:16 get_data_util:13] * Datatype of columns are:
+[I 220417 16:21:16 get_data_util:14] None
+    
+    
+[I 220417 16:21:16 get_data_util:15] * Column-wise NaNs can be identified as: 
+[I 220417 16:21:16 get_data_util:16] age          0
+    job          0
+    marital      0
+    education    0
+    default      0
+    balance      0
+    housing      0
+    loan         0
+    contact      0
+    day          0
+    month        0
+    duration     0
+    campaign     0
+    pdays        0
+    previous     0
+    poutcome     0
+    deposit      0
+    dtype: int64
+    
+[I 220417 16:21:16 get_data_util:17] Total NaNs:0
+[I 220417 16:21:16 get_data:36] Cleaned dataset was saved successfully.
+[I 220417 16:21:55 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220417 16:21:55 get_data_util:12] 
+     * Size of dataframe: (11162, 17)
+    
+[I 220417 16:21:55 get_data_util:13] * Datatype of columns are:
+[I 220417 16:21:55 get_data_util:14] None
+    
+    
+[I 220417 16:21:55 get_data_util:15] * Column-wise NaNs can be identified as: 
+[I 220417 16:21:55 get_data_util:16] age          0
+    job          0
+    marital      0
+    education    0
+    default      0
+    balance      0
+    housing      0
+    loan         0
+    contact      0
+    day          0
+    month        0
+    duration     0
+    campaign     0
+    pdays        0
+    previous     0
+    poutcome     0
+    deposit      0
+    dtype: int64
+    
+[I 220417 16:21:55 get_data_util:17] Total NaNs:0
+[I 220417 16:21:55 get_data:36] Cleaned dataset was saved successfully.

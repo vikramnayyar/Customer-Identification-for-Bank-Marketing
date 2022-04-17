@@ -1,0 +1,11 @@
+
+stages: 
+  get_data:
+    cmd: python3 src/get_data.py
+    deps:
+    - src/get_data.py
+    - src/get_data_util.py
+    - src/utility.py
+    - data/bank.csv
+    outs:
+    - data/clean_data.csv

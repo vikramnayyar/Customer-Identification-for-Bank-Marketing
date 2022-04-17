@@ -1,6 +1,6 @@
 get_data:
     download_id: "1D-0gn9kJObWDnHXy9_NwI1Us8zCfFlwt"
-    data: "../data/bank.csv"
+    data: "data/bank.csv.dvc"
     
 
 data_analysis:

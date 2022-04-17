@@ -28,7 +28,7 @@ def parse_config(config_path):
 ####################################
 
 def create_log(log_name):
-    tgt_path = pathlib.Path.cwd().parent.joinpath('log')
+    tgt_path = pathlib.Path.cwd().joinpath('log')
     logfile(tgt_path/log_name)     # Creating logfile
 
 
@@ -36,40 +36,40 @@ def create_log(log_name):
 #---------Download Dataset----------
 ####################################
 
-def download_file_from_google_drive(id, destination):
-    URL = "https://docs.google.com/uc?export=download"
+# def download_file_from_google_drive(id, destination):
+#     URL = "https://docs.google.com/uc?export=download"
 
-    session = requests.Session()
+#     session = requests.Session()
 
-    response = session.get(URL, params = { 'id' : id }, stream = True)
-    token = get_confirm_token(response)
+#     response = session.get(URL, params = { 'id' : id }, stream = True)
+#     token = get_confirm_token(response)
 
-    if token:
-        params = { 'id' : id, 'confirm' : token }
-        response = session.get(URL, params = params, stream = True)
+#     if token:
+#         params = { 'id' : id, 'confirm' : token }
+#         response = session.get(URL, params = params, stream = True)
 
-    save_response_content(response, destination)    
+#     save_response_content(response, destination)    
 
-def get_confirm_token(response):
-    for key, value in response.cookies.items():
-        if key.startswith('download_warning'):
-            return value
+# def get_confirm_token(response):
+#     for key, value in response.cookies.items():
+#         if key.startswith('download_warning'):
+#             return value
 
-    return None
+#     return None
 
-def save_response_content(response, destination):
-    CHUNK_SIZE = 32768
+# def save_response_content(response, destination):
+#     CHUNK_SIZE = 32768
 
-    with open(destination, "wb") as f:
-        for chunk in response.iter_content(CHUNK_SIZE):
-            if chunk: # filter out keep-alive new chunks
-                f.write(chunk)
+#     with open(destination, "wb") as f:
+#         for chunk in response.iter_content(CHUNK_SIZE):
+#             if chunk: # filter out keep-alive new chunks
+#                 f.write(chunk)
                 
-def download_dataset():
-    file_id = config["get_data"]["download_id"]   # read dataset download id
-    destination = pathlib.Path.cwd().parent.joinpath('data/restnt_data.csv')
-    download_file_from_google_drive(file_id, destination)
-    logger.info('Dataset was successfully downloaded')
+# def download_dataset():
+#     file_id = config["get_data"]["download_id"]   # read dataset download id
+#     destination = pathlib.Path.cwd().parent.joinpath('data/restnt_data.csv')
+#     download_file_from_google_drive(file_id, destination)
+#     logger.info('Dataset was successfully downloaded')
 
 
 ####################################
