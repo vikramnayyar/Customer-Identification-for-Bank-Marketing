@@ -1,10 +1,10 @@
 get_data:
     download_id: "1D-0gn9kJObWDnHXy9_NwI1Us8zCfFlwt"
-    data: "data/bank.csv.dvc"
+    data: "data/bank.csv"
     
 
 data_analysis:
-    data: "../data/bank.csv"    
+    data: "data/bank.csv"    
     
     dataset_balance:
         title: "Deposit Distribution of Bank Customers"
@@ -38,16 +38,20 @@ data_analysis:
 
 
 prepare_data:
-    data: "../data/clean_data.csv"
+    data: "data/clean_data.csv"
     
 split_data:
-    data: "../data/prepared_data.csv"
+    data: "data/prepared_data.csv"
+    train_data: "data/train_data.csv"
+    train_labels: "data/train_labels.csv"
+    test_data: "data/test_data.csv"
+    test_labels: "data/test_labels.csv"
     
 model_data:
-    train_set: "../data/train_set.csv"
-    train_labels: "../data/train_labels.csv"
-    test_set: "../data/test_set.csv"
-    test_labels: "../data/test_labels.csv"
+    train_set: "data/train_data.csv"
+    train_labels: "data/train_labels.csv"
+    test_set: "data/test_data.csv"
+    test_labels: "data/test_labels.csv"
 
     feature_importance:
         xlabel: "Feature Labels"

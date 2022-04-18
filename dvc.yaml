@@ -9,3 +9,54 @@ stages:
     - data/bank.csv
     outs:
     - data/clean_data.csv
+
+  data_analysis:
+    cmd: python3 src/data_analysis.py
+    deps:
+    - src/data_analysis.py
+    - src/data_analysis_util.py
+    - src/utility.py
+    - data/clean_data.csv
+    outs:
+    - visualizations/dataset_balance.png
+    - visualizations/bal_vs_deposit.png
+    - visualizations/age_vs_deposit.png
+    - visualizations/job_vs_deposit.png
+    - visualizations/marital_vs_deposit.png
+    - visualizations/education_vs_deposit.png
+
+  prepare_data:
+    cmd: python3 src/prepare_data.py
+    deps:
+    - src/prepare_data.py
+    - src/prepare_data_util.py
+    - src/utility.py
+    - data/clean_data.csv
+    outs:
+    - data/prepared_data.csv  
+
+  split_data:
+    cmd: python3 src/split_data.py
+    deps:
+    - src/split_data.py
+    - src/split_data_util.py
+    - src/utility.py
+    - data/prepared_data.csv
+    outs:
+    - data/train_data.csv
+    - data/train_labels.csv
+    - data/test_data.csv
+    - data/test_labels.csv
+
+  model_data:
+    cmd: python3 src/model_data.py
+    deps:
+    - src/model_data.py
+    - src/model_data_util.py
+    - src/utility.py
+    - data/train_data.csv
+    - data/train_labels.csv
+    - data/test_data.csv
+    - data/test_labels.csv
+    outs:
+    - model/model.pkl

@@ -19,3 +19,112 @@ stages:
     - path: data/clean_data.csv
       md5: 8d1cc2ceea5c63e650e4d314250efdd3
       size: 918960
+  data_analysis:
+    cmd: python3 src/data_analysis.py
+    deps:
+    - path: data/clean_data.csv
+      md5: 8d1cc2ceea5c63e650e4d314250efdd3
+      size: 918960
+    - path: src/data_analysis.py
+      md5: b97ab2a52ba1bd272b2a08a0cfbbf553
+      size: 2158
+    - path: src/data_analysis_util.py
+      md5: db69dc0893930ccb9ba65ac547eb843e
+      size: 2657
+    - path: src/utility.py
+      md5: 678039f5a3a30acafb47323780ed5ba3
+      size: 2948
+    outs:
+    - path: visualizations/age_vs_deposit.png
+      md5: bd961226c10dc358f20f31be2a622851
+      size: 29179
+    - path: visualizations/bal_vs_deposit.png
+      md5: e2aa70e6b68ec7af787023f264d28b0a
+      size: 30672
+    - path: visualizations/dataset_balance.png
+      md5: 159b89f0033fb82d308e706a7ff85afa
+      size: 24039
+    - path: visualizations/education_vs_deposit.png
+      md5: 4b7540e2e09615cfafcf06a85f25e19d
+      size: 16190
+    - path: visualizations/job_vs_deposit.png
+      md5: 9a9d11ff8fec9e0c61539b503052644a
+      size: 22604
+    - path: visualizations/marital_vs_deposit.png
+      md5: 99fe4e1d101df1599bed0aa98f43b26a
+      size: 16399
+  prepare_data:
+    cmd: python3 src/prepare_data.py
+    deps:
+    - path: data/clean_data.csv
+      md5: 8d1cc2ceea5c63e650e4d314250efdd3
+      size: 918960
+    - path: src/prepare_data.py
+      md5: 123d7540b60bf03754693a8a28fcd443
+      size: 2681
+    - path: src/prepare_data_util.py
+      md5: 18bb31649c1a7da607bf322d5e090ec1
+      size: 2550
+    - path: src/utility.py
+      md5: 678039f5a3a30acafb47323780ed5ba3
+      size: 2948
+    outs:
+    - path: data/prepared_data.csv
+      md5: ce7edef06e4a78a8b09e2b579b558401
+      size: 718748
+  split_data:
+    cmd: python3 src/split_data.py
+    deps:
+    - path: data/prepared_data.csv
+      md5: ce7edef06e4a78a8b09e2b579b558401
+      size: 718748
+    - path: src/split_data.py
+      md5: 621e1f608a0e5abd7f52e6c052cbca94
+      size: 1044
+    - path: src/split_data_util.py
+      md5: d18690afbbb6e6e058380ac9b2e22748
+      size: 3335
+    - path: src/utility.py
+      md5: 678039f5a3a30acafb47323780ed5ba3
+      size: 2948
+    outs:
+    - path: data/test_data.csv
+      md5: a6df1e91406cacdfb5ad12686bb87650
+      size: 138863
+    - path: data/test_labels.csv
+      md5: 454dd0bba127be5cdc9075350bde6ae7
+      size: 4474
+    - path: data/train_data.csv
+      md5: 36072cbbacfa80b51f4f58bf9a65080a
+      size: 555317
+    - path: data/train_labels.csv
+      md5: 1c60447f399e84fdaa1e868b075da2e3
+      size: 17866
+  model_data:
+    cmd: python3 src/model_data.py
+    deps:
+    - path: data/test_data.csv
+      md5: a6df1e91406cacdfb5ad12686bb87650
+      size: 138863
+    - path: data/test_labels.csv
+      md5: 454dd0bba127be5cdc9075350bde6ae7
+      size: 4474
+    - path: data/train_data.csv
+      md5: 36072cbbacfa80b51f4f58bf9a65080a
+      size: 555317
+    - path: data/train_labels.csv
+      md5: 1c60447f399e84fdaa1e868b075da2e3
+      size: 17866
+    - path: src/model_data.py
+      md5: 137ff1f32cef014babfa59c657c21491
+      size: 1828
+    - path: src/model_data_util.py
+      md5: 66c34afde4ad1c932cda83cb21a7005a
+      size: 5889
+    - path: src/utility.py
+      md5: 678039f5a3a30acafb47323780ed5ba3
+      size: 2948
+    outs:
+    - path: model/model.pkl
+      md5: 30ba267b46f9e8d5bf013ab509eed59d
+      size: 1085819

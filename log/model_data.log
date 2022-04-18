@@ -13,3 +13,84 @@
     2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.828034
     5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.782356
 [I 211209 12:28:56 model_data:46] Accuracy of the best model after optimization is 0.8705776981639051
+[E 220418 13:21:04 utility:87] Dataset was not loaded. Please ensure that dataset is provided and is named correctly.
+[I 220418 13:21:04 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[E 220418 13:21:04 utility:87] Dataset was not loaded. Please ensure that dataset is provided and is named correctly.
+[I 220418 13:21:04 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[E 220418 13:21:48 utility:87] Dataset was not loaded. Please ensure that dataset is provided and is named correctly.
+[I 220418 13:21:48 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[E 220418 13:21:48 utility:87] Dataset was not loaded. Please ensure that dataset is provided and is named correctly.
+[I 220418 13:21:48 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:25:12 utility:83] Dataset with 8929 and 16 features was loaded successfully.
+[I 220418 13:25:12 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[I 220418 13:25:12 utility:83] Dataset with 2233 and 16 features was loaded successfully.
+[I 220418 13:25:12 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:25:27 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.861173
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.854008
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.827586
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.783251
+[I 220418 13:25:39 utility:83] Dataset with 8929 and 16 features was loaded successfully.
+[I 220418 13:25:39 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[I 220418 13:25:39 utility:83] Dataset with 2233 and 16 features was loaded successfully.
+[I 220418 13:25:39 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:25:48 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.862069
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.854008
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.828034
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.776982
+[I 220418 13:26:56 utility:83] Dataset with 8929 and 16 features was loaded successfully.
+[I 220418 13:26:56 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[I 220418 13:26:56 utility:83] Dataset with 2233 and 16 features was loaded successfully.
+[I 220418 13:26:56 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:27:05 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.856247
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.854904
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.831169
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.787730
+[I 220418 13:27:18 model_data:46] Accuracy of the best model after optimization is 0.8705776981639051
+[I 220418 13:27:49 utility:83] Dataset with 8929 and 16 features was loaded successfully.
+[I 220418 13:27:49 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[I 220418 13:27:49 utility:83] Dataset with 2233 and 16 features was loaded successfully.
+[I 220418 13:27:49 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:27:59 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.858934
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.850425
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.829378
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.777877
+[I 220418 13:28:11 model_data:46] Accuracy of the best model after optimization is 0.8705776981639051
+[I 220418 13:28:52 utility:83] Dataset with 8929 and 16 features was loaded successfully.
+[I 220418 13:28:52 utility:83] Dataset with 8929 and 1 features was loaded successfully.
+[I 220418 13:28:52 utility:83] Dataset with 2233 and 16 features was loaded successfully.
+[I 220418 13:28:52 utility:83] Dataset with 2233 and 1 features was loaded successfully.
+[I 220418 13:29:01 model_data:34]                                           model_name  Accuracy
+    7         <class 'catboost.core.CatBoostClassifier'>  0.871921
+    8          <class 'lightgbm.sklearn.LGBMClassifier'>  0.869682
+    4  <class 'sklearn.ensemble._forest.RandomForestC...  0.857591
+    3  <class 'sklearn.ensemble._gb.GradientBoostingC...  0.856695
+    6            <class 'xgboost.sklearn.XGBClassifier'>  0.854008
+    0  <class 'sklearn.ensemble._forest.ExtraTreesCla...  0.850425
+    1  <class 'sklearn.ensemble._weight_boosting.AdaB...  0.832512
+    2  <class 'sklearn.ensemble._bagging.BaggingClass...  0.830273
+    5  <class 'sklearn.tree._classes.DecisionTreeClas...  0.779669
+[I 220418 13:29:19 model_data:46] Accuracy of the best model after optimization is 0.8705776981639051

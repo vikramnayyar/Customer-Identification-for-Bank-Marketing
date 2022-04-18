@@ -28,3 +28,93 @@
     Rows in test data: 2233
     Rows in test labels: 2233
     
+[I 220418 11:47:13 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220418 11:47:13 split_data_util:43] The correlation of 'rating' with other columns is: contact     -0.249847
+    housing     -0.203888
+    campaign    -0.136598
+    poutcome    -0.122369
+    loan        -0.110580
+    day         -0.056326
+    default     -0.040680
+    month       -0.037121
+    age          0.034901
+    job          0.063395
+    marital      0.067610
+    education    0.095948
+    balance      0.110295
+    pdays        0.153562
+    previous     0.183557
+    duration     0.518332
+    deposit      1.000000
+    Name: deposit, dtype: float64
+[I 220418 11:47:13 split_data_util:57] 
+    Rows in train set : 8929
+    Rows in test set: 2233
+    
+    
+[I 220418 11:47:14 split_data_util:93] 
+    Rows in train data : 8929
+    Rows in train labels: 8929
+    Rows in test data: 2233
+    Rows in test labels: 2233
+    
+[I 220418 11:54:50 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220418 11:54:51 split_data_util:43] The correlation of 'rating' with other columns is: contact     -0.249847
+    housing     -0.203888
+    campaign    -0.136598
+    poutcome    -0.122369
+    loan        -0.110580
+    day         -0.056326
+    default     -0.040680
+    month       -0.037121
+    age          0.034901
+    job          0.063395
+    marital      0.067610
+    education    0.095948
+    balance      0.110295
+    pdays        0.153562
+    previous     0.183557
+    duration     0.518332
+    deposit      1.000000
+    Name: deposit, dtype: float64
+[I 220418 11:54:51 split_data_util:57] 
+    Rows in train set : 8929
+    Rows in test set: 2233
+    
+    
+[I 220418 11:54:51 split_data_util:93] 
+    Rows in train data : 8929
+    Rows in train labels: 8929
+    Rows in test data: 2233
+    Rows in test labels: 2233
+    
+[I 220418 11:55:39 utility:83] Dataset with 11162 and 17 features was loaded successfully.
+[I 220418 11:55:40 split_data_util:43] The correlation of 'rating' with other columns is: contact     -0.249847
+    housing     -0.203888
+    campaign    -0.136598
+    poutcome    -0.122369
+    loan        -0.110580
+    day         -0.056326
+    default     -0.040680
+    month       -0.037121
+    age          0.034901
+    job          0.063395
+    marital      0.067610
+    education    0.095948
+    balance      0.110295
+    pdays        0.153562
+    previous     0.183557
+    duration     0.518332
+    deposit      1.000000
+    Name: deposit, dtype: float64
+[I 220418 11:55:40 split_data_util:57] 
+    Rows in train set : 8929
+    Rows in test set: 2233
+    
+    
+[I 220418 11:55:40 split_data_util:93] 
+    Rows in train data : 8929
+    Rows in train labels: 8929
+    Rows in test data: 2233
+    Rows in test labels: 2233
+    

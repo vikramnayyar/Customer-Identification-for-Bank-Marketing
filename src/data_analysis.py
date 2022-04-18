@@ -69,4 +69,4 @@ grouped_bar_plot(df_clean, "marital", "marital_vs_deposit")
 grouped_bar_plot(df_clean, "education", "education_vs_deposit")
 
 
-os.chdir('../src')  # resetting to src path 
+# os.chdir('..')  # resetting to src path 

@@ -13,7 +13,7 @@ create_log("prepare_data.log")  # Creating log file
 ##################################################
 #-----------------Reading Dataset-----------------
 ##################################################
-config_path = "../config/config.yaml"   
+config_path = "config/config.yaml"   
 config = parse_config(config_path)   # read config file
 data_path = config["prepare_data"]["data"]   # read dataset
 df_clean = read_data(data_path)
@@ -85,4 +85,4 @@ for i in df_clean['pdays']:
 grubbs_test(df_clean['pdays'])
 
 
-df_clean.to_csv("../data/prepared_data.csv", index = False)   # Saving file
+df_clean.to_csv("data/prepared_data.csv", index = False)   # Saving file

@@ -16,7 +16,7 @@ create_log("model_data.log")  # Creating log file
 ##################################################
 #-------------Reading Dataset & Config------------
 ##################################################
-config_path = "../config/config.yaml"   
+config_path = "config/config.yaml"   
 config = parse_config(config_path)   # read config file
 
 train_data = read_data(config["model_data"]["train_set"])
@@ -47,6 +47,6 @@ logger.info("Accuracy of the best model after optimization is {}".format(accurac
     
 
 # Saving Model
-file = open('../model/model.pkl', 'wb')   # Open a file to store model
+file = open('model/model.pkl', 'wb')   # Open a file to store model
 pickle.dump(best_model, file)   # dumping information to the file
 file.close()

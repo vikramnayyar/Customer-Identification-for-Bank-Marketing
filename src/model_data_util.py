@@ -36,7 +36,7 @@ from utility import parse_config
 #-----------------Reading Config------------------
 ##################################################
 
-config_path = "../config/config.yaml"   
+config_path = "config/config.yaml"   
 config = parse_config(config_path)   # read config file
 
 ##################################################
@@ -78,9 +78,9 @@ def plot_cm(model, cm, accuracy):
     plt.ylabel('Actual Values')
     plt.xlabel('Predicted Values \n \n Accuracy: {}'.format(round(accuracy, 4)))
     
-    os.chdir('../visualizations')
+    os.chdir('visualizations')
     plt.savefig('cm_{}'.format(model))   # save figure
-    os.chdir('../src')
+    os.chdir('..')
 
 
 
@@ -142,9 +142,9 @@ def plot_feature_importance(train_data, train_labels, best_model):
     plt.xlabel(config["model_data"]["feature_importance"]["ylabel"], fontsize = 14)
     plt.grid()
     
-    os.chdir("../visualizations")
-    plt.savefig("feature_importance.png")
-    os.chdir("../src")
+    # os.chdir("visualizations")
+    plt.savefig("visualizations/feature_importance.png")
+    # os.chdir("..")
     
     
 def optimize_best_model(train_data, train_labels, test_data, test_labels):
