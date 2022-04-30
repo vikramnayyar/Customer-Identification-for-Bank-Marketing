@@ -11,4 +11,4 @@ jobs:
     - name: Run Project
       run: |
           pip install -r requirements.txt
-          python3 run_project.py
+          python3 src/run_project.py
