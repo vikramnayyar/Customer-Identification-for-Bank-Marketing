@@ -11,6 +11,6 @@ for program in program_list:
     subprocess.call(['python3', program])
     print("Finished:" + program)
 
-app = '../app/app.py'
+app = 'app/app.py'
 subprocess.call(['streamlit', 'run',  app])
 print("Finished:" + app)
