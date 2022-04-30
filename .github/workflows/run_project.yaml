@@ -1,0 +1,10 @@
+name: Customer Identification Project Workflow                                               
+
+on: push                                                  
+jobs:                         
+  run-project:                                                      
+    runs-on: ubuntu-latest
+    name: Running Dockerfile
+    steps:                           
+    - name: checkout repo                             
+      uses: actions/Customer-Identification-for-Bank-Marketing@v1
