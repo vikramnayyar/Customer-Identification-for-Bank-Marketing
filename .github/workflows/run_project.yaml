@@ -7,4 +7,4 @@ jobs:
     name: Running Dockerfile
     steps:                           
     - name: checkout repo                             
-      uses: actions/Customer-Identification-for-Bank-Marketing@v1
+      uses: vikramnayyar/Customer-Identification-for-Bank-Marketing@v1
