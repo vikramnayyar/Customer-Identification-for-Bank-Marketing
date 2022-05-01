@@ -10,5 +10,13 @@ jobs:
     - uses: iterative/setup-cml@v1
     - name: Install Requirements 
       run: pip install -r requirements.txt
-    - name: Run Project
-      run: python3 src/run_project.py
+    - name: Get Data
+      run: python3 src/get_data.py
+    - name: Analyze Data
+      run: python3 data_analysis/get_data.py
+    - name: Prepare Data
+      run: python3 prepare_data/get_data.py
+    - name: Split Data
+      run: python3 src/split_data.py
+    - name: Model Data
+      run: python3 src/model_data.py
