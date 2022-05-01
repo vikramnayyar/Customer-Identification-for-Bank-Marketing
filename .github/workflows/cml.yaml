@@ -13,9 +13,9 @@ jobs:
     - name: Get Data
       run: python3 src/get_data.py
     - name: Analyze Data
-      run: python3 data_analysis/get_data.py
+      run: python3 src/data_analysis.py
     - name: Prepare Data
-      run: python3 prepare_data/get_data.py
+      run: python3 src/prepare_data.py
     - name: Split Data
       run: python3 src/split_data.py
     - name: Model Data
